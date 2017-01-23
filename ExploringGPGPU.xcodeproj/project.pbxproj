@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54DD44A41E35AD3F00B075AC /* LinearTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DD44A31E35AD3F00B075AC /* LinearTests.m */; };
 		9818165E1868F5ED00B55C6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9818165D1868F5ED00B55C6E /* Foundation.framework */; };
 		981816601868F5ED00B55C6E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9818165F1868F5ED00B55C6E /* CoreGraphics.framework */; };
 		981816621868F5ED00B55C6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 981816611868F5ED00B55C6E /* UIKit.framework */; };
@@ -26,7 +27,21 @@
 		98C5779E186C783400F60E0F /* IterativeTester.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C5779D186C783400F60E0F /* IterativeTester.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		54DD449D1E35AD1900B075AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 981816521868F5ED00B55C6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 981816591868F5ED00B55C6E;
+			remoteInfo = ExploringGPGPU;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		54DD44981E35AD1900B075AC /* ExploringGPGPUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExploringGPGPUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54DD449C1E35AD1900B075AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54DD44A21E35AD3F00B075AC /* ExploringGPGPUTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExploringGPGPUTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		54DD44A31E35AD3F00B075AC /* LinearTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinearTests.m; sourceTree = "<group>"; };
 		9818165A1868F5ED00B55C6E /* ExploringGPGPU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExploringGPGPU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9818165D1868F5ED00B55C6E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9818165F1868F5ED00B55C6E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -57,6 +72,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		54DD44951E35AD1900B075AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		981816571868F5ED00B55C6E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,10 +95,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54DD44991E35AD1900B075AC /* ExploringGPGPUTests */ = {
+			isa = PBXGroup;
+			children = (
+				54DD449C1E35AD1900B075AC /* Info.plist */,
+				54DD44A31E35AD3F00B075AC /* LinearTests.m */,
+				54DD44A21E35AD3F00B075AC /* ExploringGPGPUTests-Bridging-Header.h */,
+			);
+			path = ExploringGPGPUTests;
+			sourceTree = "<group>";
+		};
 		981816511868F5ED00B55C6E = {
 			isa = PBXGroup;
 			children = (
 				981816671868F5ED00B55C6E /* ExploringGPGPU */,
+				54DD44991E35AD1900B075AC /* ExploringGPGPUTests */,
 				9818165C1868F5ED00B55C6E /* Frameworks */,
 				9818165B1868F5ED00B55C6E /* Products */,
 			);
@@ -86,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				9818165A1868F5ED00B55C6E /* ExploringGPGPU.app */,
+				54DD44981E35AD1900B075AC /* ExploringGPGPUTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,6 +175,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		54DD44971E35AD1900B075AC /* ExploringGPGPUTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54DD449F1E35AD1900B075AC /* Build configuration list for PBXNativeTarget "ExploringGPGPUTests" */;
+			buildPhases = (
+				54DD44941E35AD1900B075AC /* Sources */,
+				54DD44951E35AD1900B075AC /* Frameworks */,
+				54DD44961E35AD1900B075AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54DD449E1E35AD1900B075AC /* PBXTargetDependency */,
+			);
+			name = ExploringGPGPUTests;
+			productName = ExploringGPGPUTests;
+			productReference = 54DD44981E35AD1900B075AC /* ExploringGPGPUTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		981816591868F5ED00B55C6E /* ExploringGPGPU */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 981816971868F5EE00B55C6E /* Build configuration list for PBXNativeTarget "ExploringGPGPU" */;
@@ -164,8 +216,21 @@
 		981816521868F5ED00B55C6E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Bartosz Ciechanowski";
+				TargetAttributes = {
+					54DD44971E35AD1900B075AC = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 5UAR78B6YU;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 981816591868F5ED00B55C6E;
+					};
+					981816591868F5ED00B55C6E = {
+						DevelopmentTeam = 8JPQSRV9T5;
+					};
+				};
 			};
 			buildConfigurationList = 981816551868F5ED00B55C6E /* Build configuration list for PBXProject "ExploringGPGPU" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -181,11 +246,19 @@
 			projectRoot = "";
 			targets = (
 				981816591868F5ED00B55C6E /* ExploringGPGPU */,
+				54DD44971E35AD1900B075AC /* ExploringGPGPUTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		54DD44961E35AD1900B075AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		981816581868F5ED00B55C6E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -200,6 +273,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		54DD44941E35AD1900B075AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54DD44A41E35AD3F00B075AC /* LinearTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		981816561868F5ED00B55C6E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,6 +297,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		54DD449E1E35AD1900B075AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 981816591868F5ED00B55C6E /* ExploringGPGPU */;
+			targetProxy = 54DD449D1E35AD1900B075AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		9818166A1868F5ED00B55C6E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -228,6 +317,65 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		54DD44A01E35AD1900B075AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 5UAR78B6YU;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = ExploringGPGPUTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goodnotesapp.ExploringGPGPUTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "ExploringGPGPUTests/ExploringGPGPUTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExploringGPGPU.app/ExploringGPGPU";
+			};
+			name = Debug;
+		};
+		54DD44A11E35AD1900B075AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 5UAR78B6YU;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = ExploringGPGPUTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goodnotesapp.ExploringGPGPUTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ExploringGPGPUTests/ExploringGPGPUTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExploringGPGPU.app/ExploringGPGPU";
+			};
+			name = Release;
+		};
 		981816951868F5EE00B55C6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -311,9 +459,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 8JPQSRV9T5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExploringGPGPU/ExploringGPGPU-Prefix.pch";
 				INFOPLIST_FILE = "ExploringGPGPU/ExploringGPGPU-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.goodnotesapp.ExploringGPGPU;
 				PRODUCT_NAME = ExploringGPGPU;
 				WRAPPER_EXTENSION = app;
 			};
@@ -324,10 +474,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 8JPQSRV9T5;
 				GCC_OPTIMIZATION_LEVEL = fast;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExploringGPGPU/ExploringGPGPU-Prefix.pch";
 				INFOPLIST_FILE = "ExploringGPGPU/ExploringGPGPU-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.goodnotesapp.ExploringGPGPU;
 				PRODUCT_NAME = ExploringGPGPU;
 				WRAPPER_EXTENSION = app;
 			};
@@ -336,6 +488,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		54DD449F1E35AD1900B075AC /* Build configuration list for PBXNativeTarget "ExploringGPGPUTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54DD44A01E35AD1900B075AC /* Debug */,
+				54DD44A11E35AD1900B075AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		981816551868F5ED00B55C6E /* Build configuration list for PBXProject "ExploringGPGPU" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
